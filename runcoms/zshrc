@@ -12,3 +12,33 @@ fi
 
 # Customize to your needs...
 
+sa(){su -c "$*"} # alias for doing su without getting into root and executes a command
+bindkey "^R" history-incremental-search-backward
+python(){python2.7}
+
+#Customize to your needs...
+export EDITOR=vim
+#export ARM=/opt/arm-linux/bin
+#export LM32=/opt/lm32/bin/
+export TERM=rxvt-256color
+#export CROSS_COMPILE=/opt/lm32/bin/lm32-elf-
+#export CROSS_COMPILE=/opt/arm-linux/bin/arm-linux-
+#export MODELSIM=/home/bradomyn/modelsim/modeltech/bin
+export XILINX=/home/bradomyn/xilinx/14.4/ISE_DS/ISE/bin/lin64
+export QUARTUS=/home/bradomyn/altera/16.0/quartus
+export QUARTUS_64BIT=1
+export NUM_PARALLEL_PROCESSORS=4
+export QUARTUS_ROOTDIR=/home/bradomyn/altera/16.0/quartus
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/lm32/bin:$QUARTUS:$XILINX
+
+#:$ARM:$MODELSIM:$LM32:$XILINX_BIN
+
+export ACK_PAGER=more
+export PERL_LOCAL_LIB_ROOT="/home/bradomyn/perl5";
+export PERL_MB_OPT="--install_base /home/bradomyn/perl5";
+export PERL_MM_OPT="INSTALL_BASE=/home/bradomyn/perl5";
+export PERL5LIB="/home/bradomyn/perl5/lib/perl5/x86_64-linux-thread-multi:/home/bradomyn/perl5/lib/perl5";
+export PATH="/home/bradomyn/perl5/bin:$PATH";
+
+
+
